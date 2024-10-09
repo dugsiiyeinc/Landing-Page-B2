@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ffeb3b;
+}
+
+.cta {
+  background-color: #ffeb3b;
+  color: #007bff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background-color: #ffc107;
+  color: white;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.hamburger-menu span {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.hamburger-men.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(6px, 6px);
+}
+
+.hamburger-men.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-men.active span:nth-child(2) {
+  transform: rotate(-45deg) translateY(6px, -6px);
+}
+
+.nav.active {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #007bff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+/* hero */
+.hero {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+/* Services */
+.services .container {
+  padding: 70px 0;
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.service {
+  flex: 0 1 300px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+.service img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 26px;
+}
+
+.service .cta {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.service .cta:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section */
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffeb3b;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 15px;
+  transition: color 0.3;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+}
+
+/* Responsive */
+/* small phones */
+/* 320px with X 568 */
+/* 375px - 667px  */
+/* 414px - 896px */
+
+/* Tables */
+
+/* 412 - 915px */
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+  }
+  .nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .nav a {
+    margin: 10px 0;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .service {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .cta {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  .service img {
+    max-width: 80px;
+  }
+  .footer-links a {
+    margin: 0 10px;
+  }
+  .social-icons a {
+    margin: 0 10px;
+  }
+}

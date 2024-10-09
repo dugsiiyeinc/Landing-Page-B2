@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page| </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+     <header class="header">
+        <div class="container">
+            <div class="logo">Brand Name</div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav"id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#Services">Services</a>
+                <a href="#Contact">Contact</a>
+                <a href="" class="cta">Get Started</a>
+
+            </nav>
+        </div>
+     </header>
+
+     <!-- Hero Section -->
+    
+     <section class="hero"id="home">
+        <div class="container">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Your success journey starts here. Discover our services and see how we can help you.</p>
+            <a href="#services" class="cta">Learn more</a>
+        </div>
+     </section>
+
+     <!-- Services selection -->
+      
+     <section class="services" id="Services">
+        <div class="container">
+            <div class="service">
+                <img src="/images/profile-pic.png" alt="Service one">
+                <h3>Service One</h3>
+                <p>Short description of the first key service offered.</p>
+            </div>
+            <div class="service">
+                <img src="/images/profile-pic.png" alt="Service two">
+                <h3>Service two</h3>
+                <p>Short description of the Second key service offered.</p>
+            </div>
+            <div class="service">
+                <img src="/images/profile-pic.png" alt="Service three">
+                <h3>Service three</h3>
+                <p>Short description of the third key service offered.</p>
+            </div>
+        </div>
+         
+     </section>
+
+
+
+     <!-- Footer Sections -->
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms  of Services</a>
+            </div>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+     </footer>
+
+
+
+
+
+     <script>
+         const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburgerMenu.classList.toggle('active');
+        });
+     </script>
+
+</body>
+</html>
